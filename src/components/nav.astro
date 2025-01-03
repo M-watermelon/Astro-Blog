@@ -1,0 +1,44 @@
+---
+import house from "../icons/house.svg"
+import envelope from "../icons/envelope.svg"
+import person from "../icons/person-circle.svg"
+import archive from "../icons/archive.svg"
+import bio from "../icons/capsule-pill.svg"
+
+
+---
+
+<nav>
+    <div class="center">
+    <button type="button" onclick="window.location='/'"><img class ="icon" src={house.src}> Home</button>
+    <button type="button" onclick="window.location='about'"><img class ="icon" src={person.src}> About</button>
+    <button type="button" onclick="window.location='archive'"><img class ="icon" src={archive.src}>Archive</button>
+    <button type="button" onclick="window.location='bio'"><img class ="icon" src={bio.src}>Biology</button>
+    <button type="button" onclick="window.location='landing'"><img class ="icon" src={envelope.src}>Social</button>
+    
+</div>
+</nav>
+
+
+<style>
+    button{
+    width:150px;
+    display: inline;
+    margin-top: 10px;
+    transition:0.3s;  
+    color:var(--roseWhite);
+  }
+  
+    button:hover{
+    background-color: transparent;
+
+  }
+  .icon{
+    filter: brightness(0) saturate(100%) invert(38%) sepia(8%) saturate(366%) hue-rotate(214deg) brightness(90%) contrast(89%);
+    height:18px;
+    padding-right: 10px;
+  }
+  button:hover > .icon{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);
+}
+</style>

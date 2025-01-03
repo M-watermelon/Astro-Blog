@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/page.astro';
+import Foot from '../components/footer.astro';
+---
+
+<Layout title="About">
+	<main class="parent">
+		<div>
+			<h1 style = "height: fit-content; border-bottom:2px solid var(--subtitle-color);">Welcome to my website!</h1> 
+		</div>
+		<div>
+
+		</div>
+	</main>
+</Layout>
+
+
+<style>
+	.parent {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	padding: 20px;
+
+	}
+</style>
