@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  base: 'https://m-watermelon.github.io/Astro-Blog/',
+  site: 'https://m-watermelon.github.io/',
+  base: 'Astro-Blog/',
 })
