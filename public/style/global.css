@@ -18,7 +18,7 @@
   }
   @font-face {
     font-family: 'Nunito'; /*a name to be used later*/
-    src: url('public/fonts/Nunito/Nunito-VariableFont_wght.ttf'); /*URL to font*/
+    src: url('/public/fonts/Nunito/Nunito-VariableFont_wght.ttf'); /*URL to font*/
   }
   
   
