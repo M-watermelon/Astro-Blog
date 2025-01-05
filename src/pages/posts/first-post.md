@@ -11,9 +11,9 @@ It's finally here! After two (almost three) years of amateur website building, I
 
 
 #### The story behind this site:
-Previously, I had published a website using Github pages, Jekyll, and the YAT theme. It was good to have a temporary way of connecting my computer science activities, but even if I was the one that set up the website and written posts, it didn't really feel like it was my work. So, after that site was well-established, I decided to make one from scratch. It took three separate attempts, but a year later, I finally have a site I can call my own!
+Previously, I had published a website using Github pages, Jekyll, and the YAT theme. It was good to have a temporary way of connecting my computer science activities, but even if I was the one that set up the website and wrote posts, it didn't really feel like it was my work. So, after that site was well-established, I decided to make one from scratch. It took three separate attempts, but a year later, I finally have a site I can call my own!
 
-Initially, I made this site using only HTML/CSS and a little Javascript for the navbar. It was first published in May of 2024, and seen many changes. And now, I've finally migrated it to **Astro**!
+Initially, I made this site using only HTML/CSS and a little Javascript for the navbar. It was first published in May of 2024, and has seen many changes since. And now, I've finally migrated it to **Astro**!
 
 #### Astro as a newbie:
 I've programmed for a good amount of years, but I never really dipped my toes into web frameworks until now! I did research for months until I came across astro, courtesy of Isak Solheim on Youtube.

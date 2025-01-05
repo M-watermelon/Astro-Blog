@@ -4,19 +4,12 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Home - My Blog" >
-	<article>
+	  <Card href="about", title="About", body="This is my personal website, mostly tech centric. I'm going to update it with new posts somewhat often. Eventually, I'll add sections for other hobbies as well! For more details, check out the about me page!"/>
+	  <Card href="posts/first-post/", title="First Post!", body="My first post on this site, about how it came to exist." />
+	  <article>
+		<button type="button" class = "center" style = "width:200px; margin-bottom: 20px; background:linear-gradient(60deg,var(--tropical-indigo) 0%, var(--dark-purple) 140%);" onclick="window.location='https://m-watermelon.github.io/WatermelonBlog/'">My old blog</button>
 		<p>Check out my old blog site since I'm not done with this one!</p>
-		<button type="button" class = "center" style = "width:200px; margin-bottom: 20px;  background: linear-gradient(60deg,rgb(233, 99, 157) 0%, rgba(148,187,233,1) 100%); padding:10px;" onclick="window.location='https://m-watermelon.github.io/WatermelonBlog/'"> → My old blog ←</button>
-	  </article>
-	  <Card href="posts/biology", title="About", body="This is my personal website, mostly tech centric. I'm going to update it with new posts somewhat often. Eventually, I'll add sections for other hobbies as well! For more details, check out the about me page!"/>		
-	  </article>
-	<article>
-            
-		<div class = "subtitle"><a href = "posts/first-post/">First Post!</a></div>
-		<p>My first post on this site, about how it came to exist.</p>
-		<button type="button" class = "center" style = "margin-bottom: 10px;" onclick="window.location='post.html'">Read More</button>
-	  </article>
-	  <Card href="posts/biology", title="heh?", body="gub"/>
+	</article>
 </Layout>
 <style>
 	header{

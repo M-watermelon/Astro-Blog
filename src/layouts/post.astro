@@ -26,14 +26,24 @@ const { frontmatter, url } = Astro.props;
     <h1>{frontmatter.title}</h1>
     <p>Updated: {frontmatter.date}</p>
     <slot />
-    
+    <button type="button" style = "bottom: 10px; background-color: var(--shadow);" onclick="window.location='/Astro-Blog/'">&larr; Back</button>
+
     </main>
     <Footer/>
   </body>
 </html>
 
 <style>
+    @font-face {
+    font-family: 'Nunito'; /*a name to be used later*/
+    src: url('/public/fonts/Nunito/Nunito-VariableFont_wght.ttf'); /*URL to font*/
+  }
+    body{
+      font-family: Nunito;
+    }
+  
     main{
+        
         min-width: 30%;
         max-width: 40%;
         padding-bottom: 30px;

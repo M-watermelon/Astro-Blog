@@ -1,27 +1,100 @@
 ---
 import Layout from '../layouts/page.astro';
-import Foot from '../components/footer.astro';
+import github from "../icons/github.svg";
+import ghost from "../icons/ghost-solid.svg";
+import bear from "../images/bear3.png";
+
 ---
 
 <Layout title="About">
-	<main class="parent">
-		<div>
-			<h1 style = "height: fit-content; border-bottom:2px solid var(--subtitle-color);">Welcome to my website!</h1> 
-		</div>
-		<div>
 
-		</div>
-	</main>
+<aside>
+
+	<h1 style = "height: fit-content; border-bottom:2px solid var(--subtitle-color);">Welcome to my website!</h1> 
+	
+	<h2>I’m currently working on ... </h2>
+	<ul>
+	  <li>developing this website
+		<ul>
+		  <li>modernizing (hopefully past the y2k design era)</li>
+		</ul>
+	  </li>
+	
+	  <li>learning more about web dev</li>
+	</ul>
+	
+	<h2>Side projects <img class="icon" src={ghost.src}></h2>
+	<ul>
+	  <li>Writing posts &rArr; creating a biology section for this site</li>
+	  <li>Occasional programming and CTF competitions </li>
+	  <li>Comp sci club</li>
+	  <li>irl commitments <img src={bear.src}></li>
+	
+	</ul>
+	
+	<h2>Future projects:</h2>
+	<ul>
+	  <li>Finish learning fundamentals of C and Java </li>
+	  <li>Making a handy CTF guide (for keeping track of what I learn as well as a guide for others)</li>
+	  <li>More security certs and online pentesting games</li>
+	  <li>Studying more biology!</li>
+	  <li>Learning more about computer hardware and hardware pentesting</li>
+	</ul>
+	 
+	
+	<button type="button" style="width:max-content; background-color: var(--shadow);" onclick="window.location='https://github.com/M-watermelon'"><img class="icon" src={github.src} alt="Github">Check out my github!</button>
+
+
+	
+	<div class="right">
+		<section class="nowPlaying">
+		<div class="subtitle">Current status:</div>
+		<p> _(:o 」∠)_<br> back to work</p>
+		  <div class = "subtitle">About me:</div>
+		  <p>Hi there!! I'm an amateur programmer and hopefully, web developer.</p>
+		  <img style="max-width: 70%;/* border: 1px solid white;*/ border-radius: 50%;" src="gifs/cat-hammer.gif">
+		  
+		  <h2 class="subtitle">Hobbies:</h2>
+		  <ul>
+			<li>Existing</li>
+			<li>Making websites</li>
+			<li>Learning about biology</li>
+			<li>Videogames</li>
+			<li>Art</li>
+			<li>Books</li>
+			</ul>
+		</section>
+		
+	
+	  </aside>
+
 </Layout>
 
-
 <style>
-	.parent {
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 20px;
-	padding: 20px;
-
-	}
-</style>
+.flex {
+	display:flex;
+	justify-content: center;
+  }
+  header{
+	height:150px;
+  }
+  
+  .nowPlaying {
+	background-color:var(--bg-color);
+	width:auto;
+	max-width:400px;
+	text-align: center;
+	height:auto;
+	border-left:1px solid var(--roseWhite);
+	position:absolute;
+	right:2%;
+	top: 250px;
+	/*box-shadow: 10px 10px 5px rgb(3, 3, 3);*/
+	padding-left: 10px;
+  }
+  .nowPlaying ul{
+	text-align: left;
+  }
+  
+  
+  </style>

@@ -7,11 +7,12 @@ date: "Continuously!"
 ## Currently working on:
 
 ### Principles of Clinical Pharmacology (*11/22/24*)
-I recently registered for this online course hosted by the NIH. I have access to it until August of 2025, and that's fine, becaues I'll be a lot busier after that date. I think I have lots to do for the next 8 months!
+I recently registered for this online course hosted by the NIH. I have access to it until August of 2025, and that's fine, because I'll be a lot busier after that date. I think I have lots to do for the next 8 months!
 [Check it out!](https://ocreco.od.nih.gov/courses/principles-clinical-pharmacology.html)
 
 ## Past projects
 Here are some things that I either did in the past, or am planning on eventually reaching back to:
+
       - HarvardX Principles of Biochemistry
 
 ## Cool online resources
