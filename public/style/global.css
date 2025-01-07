@@ -33,6 +33,7 @@
   }
   p{
     font-size:20px;
+    font-weight: 300px;
   }
   a {
     color:var(--link-color);  
@@ -43,27 +44,38 @@
     width:100%;
     height: 60px;
     top:0;
-    position: fixed;
+    position: absolute;
     transition: 0.3s;
     background-color: var(--bg-color);
     z-index: 7;
   }
   
   header {
-    min-height:150px;
+    min-height:350px;
     height: max-content;
-    display: flex;
+    display: block;
     justify-content: center;
     background:linear-gradient(60deg,var(--tropical-indigo) 0%, var(--dark-purple) 100%);
-    padding-top: 3%;
-    margin-bottom: 40px;
+    margin: 0px;
+    margin-bottom: 100px;
+    padding-top: 150px;
+  }
+  header p{
+    position: static;
+    margin-top: 10px;
+    text-align: center;
   }
   .header-text{
-    position:absolute;
+    position: static;
     color:var(--roseWhite);
     font-weight: 200;
     font-size: 40px ; 
     text-align: center;
+    margin:10px;
+  }
+  header hr{
+    position: static;
+    margin: 10px 0;
   }
 
   .flex {
@@ -76,12 +88,21 @@
 		border-radius: 7px;
     box-shadow: 10px 10px 5px rgb(3, 3, 3);
     text-align: center;
-    width:800px;
     margin-top:20px;
     padding: 40px;
     transition: 0.3s;
     margin-bottom: 30px;
     
+  }
+  h1{
+    font-size: 1.4rem;
+		font-weight: 600px;
+    border-image-source:linear-gradient(to right, var(--dark-purple) 0%,var(--royal-purple) 30%, rgba(148,187,233,1) 80%, var(--dark-purple) 100%); 
+    border-image-slice: 1;
+    border-bottom:1px solid;
+  }
+  h2{
+    font-size: 1.2rem;
   }
   
   .subtitle {
@@ -96,18 +117,21 @@
   
   main {
     font-size: 18px;
-    flex-direction: column;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1000px;
+  }
+  section{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .block{
+    display:block;
   }
   
   footer {
     text-align: center;
     font-size:15px;
-    margin-top:20px;
-    height: 15vh;
-  
+    margin-top:120px;
+    height: 15vh;  
   }
 
   .center {
@@ -136,8 +160,7 @@
   }
   
   hr{
-    width:60%;
-    background:linear-gradient(60deg,var(--tropical-indigo) 0%, rgba(148,187,233,1) 100%);
+    background:linear-gradient(to right, var(--dark-purple) 0%,var(--royal-purple) 30%, rgba(148,187,233,1) 80%, var(--dark-purple) 100%); 
     height: 1px;
     border: none;
   }
@@ -148,6 +171,24 @@
   .icon{
     filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);
     height:18px;
+    padding:0px;
     padding-right: 10px;
+    margin:0px;
   }
   
+  .nowPlaying {
+    display: block;
+    background-color:var(--bg-color);
+    width:auto;
+    max-width:400px;
+    text-align: center;
+    height:auto;
+    border-left:1px solid var(--roseWhite);
+    position:absolute;
+    right:2%;
+    top: 550px;
+    padding-left: 10px;
+    }
+    .nowPlaying ul{
+    text-align: left;
+    }

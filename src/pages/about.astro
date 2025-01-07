@@ -3,10 +3,11 @@ import Layout from '../layouts/page.astro';
 import github from "../icons/github.svg";
 import ghost from "../icons/ghost-solid.svg";
 import bear from "../images/bear3.png";
+import cat from "../images/cat-hammer.gif";
 
 ---
 
-<Layout title="About">
+<Layout title="About" bantitle="About this Blog">
 
 <aside>
 
@@ -46,22 +47,18 @@ import bear from "../images/bear3.png";
 
 
 	
-	<div class="right">
+
 		<section class="nowPlaying">
 		<div class="subtitle">Current status:</div>
 		<p> _(:o 」∠)_<br> back to work</p>
 		  <div class = "subtitle">About me:</div>
 		  <p>Hi there!! I'm an amateur programmer and hopefully, web developer.</p>
-		  <img style="max-width: 70%;/* border: 1px solid white;*/ border-radius: 50%;" src="gifs/cat-hammer.gif">
+		  <img style="max-width: 70%; border: 1px solid white; border-radius: 50%;" src={cat.src}>
 		  
 		  <h2 class="subtitle">Hobbies:</h2>
 		  <ul>
 			<li>Existing</li>
 			<li>Making websites</li>
-			<li>Learning about biology</li>
-			<li>Videogames</li>
-			<li>Art</li>
-			<li>Books</li>
 			</ul>
 		</section>
 		
@@ -69,32 +66,3 @@ import bear from "../images/bear3.png";
 	  </aside>
 
 </Layout>
-
-<style>
-.flex {
-	display:flex;
-	justify-content: center;
-  }
-  header{
-	height:150px;
-  }
-  
-  .nowPlaying {
-	background-color:var(--bg-color);
-	width:auto;
-	max-width:400px;
-	text-align: center;
-	height:auto;
-	border-left:1px solid var(--roseWhite);
-	position:absolute;
-	right:2%;
-	top: 250px;
-	/*box-shadow: 10px 10px 5px rgb(3, 3, 3);*/
-	padding-left: 10px;
-  }
-  .nowPlaying ul{
-	text-align: left;
-  }
-  
-  
-  </style>

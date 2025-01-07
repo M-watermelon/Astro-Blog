@@ -1,16 +1,17 @@
 ---
-import Banner from '../components/banner.astro';
 import Nav from '../components/nav.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 const {title} = Astro.props
+const {bantitle} = Astro.props
+const {bandesc} = Astro.props
 ---
 <html lang="en">
-<Head title={title} />
+<Head title={title}  />
 <body class="page-layout">
-    <Banner title={title} />
-    <Nav/>
-    <main class="flex">
+
+    <Nav  title={bantitle} desc={bandesc}/>
+    <main class="center">
         <slot />
     </main>
     <Footer/>

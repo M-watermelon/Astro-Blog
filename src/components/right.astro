@@ -1,0 +1,28 @@
+---
+interface Props {
+	title: string;
+}
+
+const {title } = Astro.props;
+---
+<section class="nowPlaying">
+    <h3  class="subtitle">{title}<h3>
+        <ul>
+            <slot />
+        </ul>
+
+</section>
+
+<style>
+    section{
+        width: 300px;
+        text-align: left;
+        
+        
+    }
+    ul{
+        list-style-type:none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+</style>
