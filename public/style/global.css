@@ -2,7 +2,7 @@
     --bg-color:#191a21;
     --link-color:#e0215a;
     --roseWhite: #ffe8e5;
-    --shadow: rgb(3, 3, 3);
+    --shadow: rgba(3, 3, 3, 0.788);
     --purple: #d0b6e3;
     --tropical-indigo: #8D7BC8ff;
     --amethyst: #7E6BBBff;
@@ -26,7 +26,7 @@
     padding:0;
     color: var(--roseWhite);
     background-attachment:fixed;
-    background-color: #191a21 ;
+    background-color: var(--bg-color) ;
     font-family: Nunito;
     /*max-width: 700px;*/
     margin: auto;
@@ -69,7 +69,7 @@
     position: static;
     color:var(--roseWhite);
     font-weight: 200;
-    font-size: 40px ; 
+    font-size: 60px ; 
     text-align: center;
     margin:10px;
   }
@@ -95,7 +95,7 @@
     
   }
   h1{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 		font-weight: 600px;
     border-image-source:linear-gradient(to right, var(--dark-purple) 0%,var(--royal-purple) 30%, rgba(148,187,233,1) 80%, var(--dark-purple) 100%); 
     border-image-slice: 1;
@@ -121,6 +121,7 @@
   }
   section{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
   }
   .block{
@@ -183,11 +184,11 @@
     max-width:400px;
     text-align: center;
     height:auto;
-    border-left:1px solid var(--roseWhite);
+    border-left:1px solid var(--royal-purple);
     position:absolute;
     right:2%;
     top: 550px;
-    padding-left: 10px;
+    padding-left: 15px;
     }
     .nowPlaying ul{
     text-align: left;

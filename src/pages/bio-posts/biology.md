@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/post.astro
-title: "Biology"
+title: "First Biology Post"
 date: "Continuously!"
 ---
 
@@ -33,3 +33,5 @@ One day, I'll post a photo carousel of my microscope slides, especially since I'
 
 ## My favorite biology book:
  **The Color Atlas of Biochemistry:**
+![Image of the Color Atlas of Biochemistry](/src/images/book.jpg "book")
+

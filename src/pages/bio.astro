@@ -1,6 +1,16 @@
 ---
+import type { MarkdownLayoutProps } from 'astro';
 import Layout from '../layouts/page.astro';
+import Right from '../components/right.astro';
 import Card from '../components/Card.astro';
+const posts = await Astro.glob('../pages/bio-posts/*.md');
+type Props = MarkdownLayoutProps<{
+  title: string;
+  date: string;
+}>;
+
+const { frontmatter, url } = Astro.props;
+
 ---
 
 <Layout title="Biology - My Blog" bantitle="Biology posts">
@@ -13,7 +23,9 @@ import Card from '../components/Card.astro';
 
   
 <Card href="/Astro-Blog/bio-posts/biology", title="First Biology Post?", body="Just a quick log on some bio stuff I've been working on in the past couple of months."/>
-
+<Right title="All Posts">
+	{posts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+</Right>
 </section>
 <button type="button" style = "bottom: 10px;" onclick="window.location='/Astro-Blog/'">&larr; Back</button>
 

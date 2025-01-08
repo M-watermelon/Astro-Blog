@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/post.astro
-title: "Hello World!"
+title: "First Post!"
 date: "31 Dec 2024"
 ---
+Hello World,
 
-
-## The first post of my remade website!
+## Here's the first post of my remade website!
 It's finally here! After two (almost three) years of amateur website building, I've finally arrived to my initial goal: a website I've made completley on my own, using tools appropriate for the current state of the web. (This means using more than just barebones HTML/CSS, Y2K isn't *in* anymore.) And, I've learned so much in the process of accomplishing that!
 
 

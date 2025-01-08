@@ -1,31 +1,31 @@
 ---
+import { Image } from 'astro:assets';
 import house from "../icons/house.svg"
 import envelope from "../icons/envelope.svg"
 import person from "../icons/person-circle.svg"
 import archive from "../icons/archive.svg"
 import bio from "../icons/capsule-pill.svg"
 import github from "../icons/github.svg"
-
 const {title} = Astro.props;
 const {desc} = Astro.props;
 ---
-
-<header>
-
-
 <nav>
-    <div class="center">
-    <button type="button" style="left-right: 0px; padding-left: 0px;" onclick="window.location='/Astro-Blog/'"><img class ="icon" src={house.src}> Home</button>
-    <button type="button" onclick="window.location='/Astro-Blog/about'"><img class ="icon" src={person.src}> About</button>
-    <button type="button" onclick="window.location='/Astro-Blog/archive'"><img class ="icon" src={archive.src}>Archive</button>
-    <button type="button" onclick="window.location='/Astro-Blog/bio'"><img class ="icon" src={bio.src}>Biology</button>
-    <button type="button" style="margin-right: 0px; padding-right: 0px;" onclick="window.location='/Astro-Blog/landing'"><img class ="icon" src={envelope.src}>Social</button>
+  <div class="center">
+    <button type="button" style="left-right: 0px; padding-left: 0px;" onclick="window.location='/Astro-Blog/'"><Image class ="icon" src={house} alt="home"/> Home</button>
+    <button type="button" onclick="window.location='/Astro-Blog/about'"><Image class ="icon" src={person} alt="person-icon"/> About</button>
+    <button type="button" onclick="window.location='/Astro-Blog/archive'"><Image class ="icon" src={archive} alt="file-icon"/>Archive</button>
+    <button type="button" onclick="window.location='/Astro-Blog/bio'"><Image class ="icon" src={bio} alt="science-icon"/>Biology</button>
+    <button type="button" style="margin-right: 0px; padding-right: 0px;" onclick="window.location='/Astro-Blog/landing'"><Image class ="icon" src={envelope} alt="mail-icon"/>Social</button>
     
 </div>
 </nav>
+<header>
+
+
+
 <p class="header-text">{title}</p>
 <hr class="center">
-<p>{desc} <br> <button type="button" style="filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);" onclick="window.location='https://github.com/M-watermelon'"><img class="icon" style="height: 30px;" src={github.src} alt="Github"></button>
+<p>{desc} <br> <button type="button" style="filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);" onclick="window.location='https://github.com/M-watermelon'"><Image class="icon" style="height: 30px;" src={github} alt="Github"/></button>
 </p>
 </header>
 

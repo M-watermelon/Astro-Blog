@@ -16,9 +16,8 @@ const { frontmatter, url } = Astro.props;
 <Layout title="Home - My Blog" bantitle="Astro blog, by m-watermelon" bandesc="My personal website, updated somewhat often. ">
 	<h1 >Posts</h1>
 	<section style="margin-top: 0px;">
-	
+		{posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, body={post.frontmatter.date}/>)}
 
-	<Card href="posts/first-post/", title="First Post!", body="My first post on this site, about how it came to exist." />
 <Right title="All Posts">
 	{posts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 </Right>
