@@ -13,7 +13,7 @@ I recently registered for this online course hosted by the NIH. I have access to
 ## Past projects
 Here are some things that I either did in the past, or am planning on eventually reaching back to:
 
-      - HarvardX Principles of Biochemistry
+* HarvardX Principles of Biochemistry
 
 ## Cool online resources
 Here are some interesting biology related websites I've compiled! They go from simple references to increasingly advanced topics or professional sites.
@@ -33,5 +33,7 @@ One day, I'll post a photo carousel of my microscope slides, especially since I'
 
 ## My favorite biology book:
  **The Color Atlas of Biochemistry:**
+
+ 
 ![Image of the Color Atlas of Biochemistry](/src/images/book.jpg "book")
 

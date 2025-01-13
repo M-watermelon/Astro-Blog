@@ -25,7 +25,7 @@ const {desc} = Astro.props;
 
 <p class="header-text">{title}</p>
 <hr class="center">
-<p>{desc} <br> <button type="button" style="filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);" onclick="window.location='https://github.com/M-watermelon'"><Image class="icon" style="height: 30px;" src={github} alt="Github"/></button>
+<p>{desc} <br> <button type="button" style="filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);" onclick="window.location='https://github.com/M-watermelon'"><img src={github.src} style=" height:30px;" alt="Github"/></button>
 </p>
 </header>
 
@@ -55,4 +55,5 @@ const {desc} = Astro.props;
   button:hover > .icon{
     filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);
 }
+
 </style>

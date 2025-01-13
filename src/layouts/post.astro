@@ -20,7 +20,7 @@ const { frontmatter, url } = Astro.props;
     <h1>{frontmatter.title}</h1>
     <p>Updated: {frontmatter.date}</p>
     <slot />
-    <button type="button" style = "bottom: 10px; background-color: var(--shadow);" onclick="window.location='/Astro-Blog/'">&larr; Back</button>
+    <button type="button" style = "margin-top:40px; bottom: 10px; background-color: var(--shadow);" onclick="window.location='/Astro-Blog/'">&larr; Back</button>
 
     </main>
     <Footer/>

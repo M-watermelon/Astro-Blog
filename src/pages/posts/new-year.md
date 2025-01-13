@@ -7,6 +7,8 @@ New year, new goals - so here's what I plan to do in 2025:
 
 #### Computer Science:
  - Add finishing touches to this website (functionalities and design)
+ - Have more green on my Github Contributions!
+ - Finish building/fix my computer science club's website (before I graduate) 
  - Compete in PicoCTF 2025
  - Explore Hack the Box more!
  - Develop the website for the [Market repository](https://github.com/M-watermelon/Market-Site)
@@ -23,6 +25,8 @@ New year, new goals - so here's what I plan to do in 2025:
  ---
 
  ## Some small progress updates for the website:
+
+This site is now my official personal website, and the site listed under my github profile. 
 
 I finally used ```Astro.glob()``` to collect and insert my posts into my website! This is great for automating the tedious task of inserting each entry myself, which is why Astro (and using frameworks in general) is so helpful.
 
