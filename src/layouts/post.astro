@@ -16,7 +16,7 @@ const { frontmatter, url } = Astro.props;
     <Head title ={frontmatter.title} />
   <body>
     <Nav title={frontmatter.title}/>
-    <main class="center">
+    <main class="center" transition:animate="slide">
     <h1>{frontmatter.title}</h1>
     <p>Updated: {frontmatter.date}</p>
     <slot />
@@ -35,7 +35,7 @@ const { frontmatter, url } = Astro.props;
     body{
       font-family: Nunito;
     }
-  
+
     main{
         min-width: 30%;
         max-width: 40%;

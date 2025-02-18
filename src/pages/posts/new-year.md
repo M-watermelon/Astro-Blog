@@ -11,7 +11,7 @@ New year, new goals - so here's what I plan to do in 2025:
  - Finish building/fix my computer science club's website (before I graduate) 
  - Compete in PicoCTF 2025
  - Explore Hack the Box more!
- - Develop the website for the [Market repository](https://github.com/M-watermelon/Market-Site)
+ -[x] Develop the website for the [Market repository](https://github.com/M-watermelon/Market-Site)
 
 #### Biology:
  - Finish the NIH course in Clinical Pharmacology and take the final exam

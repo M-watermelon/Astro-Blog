@@ -1,5 +1,5 @@
 ---
-import Nav from '../components/smallnav.astro';
+import Nav from '../components/nav.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 const {title} = Astro.props
@@ -11,7 +11,7 @@ const {bandesc} = Astro.props
 <body class="page-layout">
 
     <Nav  title={bantitle} desc={bandesc}/>
-    <main class="center" transition:animate="slide">
+    <main transition:animate="slide" >
         <slot />
     </main>
     <Footer/>
@@ -19,5 +19,9 @@ const {bandesc} = Astro.props
 </body>
 
 </html>
-
+<style>
+    main{
+        padding-left: 20%;
+    }
+</style>
 
