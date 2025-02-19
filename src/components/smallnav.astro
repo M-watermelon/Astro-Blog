@@ -12,34 +12,38 @@ const {title} = Astro.props;
 <header>
   <nav>
     <div class="center">
-      <button type="button" style="left-right: 0px; padding-left: 0px;" onclick="window.location='/Astro-Blog/'"><Image class ="icon" src={house} alt="home"/> Home</button>
-      <button type="button" onclick="window.location='/Astro-Blog/about'"><Image class ="icon" src={person} alt="person-icon"/> About</button>
-      <button type="button" onclick="window.location='/Astro-Blog/archive'"><Image class ="icon" src={archive} alt="file-icon"/>Archive</button>
-      <button type="button" onclick="window.location='/Astro-Blog/bio'"><Image class ="icon" src={bio} alt="science-icon"/>Biology</button>
-      <button type="button" style="margin-right: 0px; padding-right: 0px;" onclick="window.location='/Astro-Blog/landing'"><Image class ="icon" src={envelope} alt="mail-icon"/>Social</button>
+      <a href='/Astro-Blog/'><Image class ="icon" src={house} alt="home"/> Home</a>
+      <a href='/Astro-Blog/about'><Image class ="icon" src={person} alt="person-icon"/> About</a>
+      <a href='/Astro-Blog/archive'><Image class ="icon" src={archive} alt="file-icon"/>Archive</a>
+      <a href='/Astro-Blog/bio'><Image class ="icon" src={bio} alt="science-icon"/>Biology</a>
+      <a href='/Astro-Blog/landing'><Image class ="icon" src={envelope} alt="mail-icon"/>Social</a>
       
   </div>
   </nav>
 </header>
 <style>
-  nav{
-    top: 0px;
-  }
     header{
       min-height:10px;
       background:linear-gradient(to right, var(--royal-purple) 0%, rgba(148,187,233,1) 100%); 
 
     }
-    button{
-    width:150px;
+    nav{
+    top:0px;
+    padding: 10px;
+    height: fit-content;
+    background-color: var(--shadow);
+  }
+    a{
+    margin-left:70px;
     font-size: 15px;
     display: inline;
     margin-top: 10px;
     transition:0.3s;  
-    color:var(--roseWhite);
+    color:var(--purple);
+
   }
   
-    button:hover{
+    a:hover{
     background-color: transparent;
 
   }
@@ -52,7 +56,8 @@ const {title} = Astro.props;
     height:16px;
     padding-right: 10px;
   }
-  button:hover > .icon{
+  a:hover > .icon{
     filter: brightness(0) saturate(100%) invert(90%) sepia(9%) saturate(2606%) hue-rotate(300deg) brightness(117%) contrast(118%);
 }
+
 </style>
