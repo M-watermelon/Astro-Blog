@@ -7,6 +7,7 @@ const posts = await Astro.glob('../pages/posts/*.md');
 type Props = MarkdownLayoutProps<{
   title: string;
   date: string;
+  desc: string;
 }>;
 
 const { frontmatter, url } = Astro.props;
@@ -19,15 +20,15 @@ const { frontmatter, url } = Astro.props;
 	</Right>	
 	<h1 >Posts</h1>		
 	<div class="post-area">
-		{posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, body={post.frontmatter.date}/>)}
+		{posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, date={post.frontmatter.date}, body={post.frontmatter.desc}/>)}
 </div>
 	<section style="margin-top: 0px;">
 
 
 	</section>
 	  <section class="block">
-		<p style="margin-bottom: 30px;">Check out my old blog site since I'm not done with this one!</p>
-		<button type="button" style = "width:200px; margin-left: 40px; background:linear-gradient(60deg,var(--tropical-indigo) 0%, var(--dark-purple) 140%);" onclick="window.location='https://m-watermelon.github.io/WatermelonBlog/'">My old blog</button>
+		<p style="margin-bottom: 30px;">Check out my old blog site! It has some content too.</p>
+		<button class="center" type="button" style = "width:200px; background:linear-gradient(60deg,var(--tropical-indigo) 0%, var(--dark-purple) 140%);" onclick="window.open('https://m-watermelon.github.io/WatermelonBlog/','_blank')">My old blog</button>
   
 	</section>
 </Layout>

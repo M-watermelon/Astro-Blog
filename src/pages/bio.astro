@@ -7,6 +7,7 @@ const posts = await Astro.glob('../pages/bio-posts/*.md');
 type Props = MarkdownLayoutProps<{
   title: string;
   date: string;
+  desc: string;
 }>;
 
 const { frontmatter, url } = Astro.props;
@@ -19,13 +20,13 @@ const { frontmatter, url } = Astro.props;
   </Right>
     <section class="block"> 
     <p class="subtitle">What is this?</p>
-    <p>Next to cybersecurity and programming, another one of my greatest interests is biology. Specifically, biochemistry, pharmacology, and biomedical engineering. So, what's better than to make a dedicated space for it on my website?</p>
-    <Card href="/Astro-Blog/bio-posts/biology", title="First Biology Post?", body="Just a quick log on some bio stuff I've been working on in the past couple of months."/>
+    <p>A dashboard for what I've written about biology!</p>
+    <p>Next to cybersecurity and programming, another one of my greatest interests is biology. I focus on biochemistry, pharmacology, and biomedical engineering. So, what's better than to make a dedicated space for it on my website?</p>
 
   </section>
     <section class="post-area">
 
-  		{posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, body={post.frontmatter.date}/>)}
+      {posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, date={post.frontmatter.date}, body={post.frontmatter.desc}/>)}
 
 
 </section>

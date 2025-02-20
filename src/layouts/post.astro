@@ -7,6 +7,7 @@ import Head from '../components/head.astro';
 type Props = MarkdownLayoutProps<{
   title: string;
   date: string;
+  desc: string;
 }>;
 
 const { frontmatter, url } = Astro.props;
@@ -35,7 +36,6 @@ const { frontmatter, url } = Astro.props;
     body{
       font-family: Nunito;
     }
-
     main{
         min-width: 30%;
         max-width: 40%;

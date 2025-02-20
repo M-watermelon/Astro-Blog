@@ -2,8 +2,8 @@
 layout: ../../layouts/post.astro
 title: "First Post!"
 date: "31 Dec 2024"
+desc: "My print('Hello World')"
 ---
-Hello World,
 
 ## Here's the first post of my remade website!
 It's finally here! After two (almost three) years of amateur website building, I've finally arrived to my initial goal: a website I've made completley on my own, using tools appropriate for the current state of the web. (This means using more than just barebones HTML/CSS, Y2K isn't *in* anymore.) And, I've learned so much in the process of accomplishing that!
@@ -19,7 +19,7 @@ I've programmed for a good amount of years, but I never really dipped my toes in
 
 So what do I think of it? It's been a lot easier to understand than other tools I tried to use, even Jekyll themes!
 
-[Check out my old website](https://m-watermelon.github.io/WatermelonBlog/)
+[Check out my old website!](https://m-watermelon.github.io/WatermelonBlog/)
 
 #### Thoughts about my previous website:
 It took a good amount of effort to learn how to use Ruby gems to import the YAT theme, figure out how Github Pages works (I was really new to github back then), and familiarize myself with the mountain of css, javascript, and html the theme came with. The multiple config files, backed with relatively little documentation, definitely took me in more circles than I had hoped for, but I learned a lot through trial and error. Learning through experimentation is pretty fun, after all.
@@ -28,7 +28,7 @@ It took a good amount of effort to learn how to use Ruby gems to import the YAT 
 
 #### Future ideas for the site:
 Some smaller goals are listed on the home page, but in the future there are more elaborate additions I want to make:
-- Write more content!
-- Polish the website!
+- Write more content! *(Done, February '25)*
+- Polish the website! *(Done, Jan-Feb '25)*
 - Add tags to posts, make better article embedding on the home page
-- Add a "go back" button for easy access
+- Add a "go back" button for easy access *(Done, January '25)*

@@ -1,9 +1,10 @@
 ---
-title: 'New years post!'
+title: "New years' post!"
 layout: ../../layouts/post.astro
 date: '07 Jan 2025'
+desc: 'New year, new goals'
 ---
-New year, new goals - so here's what I plan to do in 2025:
+ So here's what I plan to do in 2025:
 
 #### Computer Science:
  - Add finishing touches to this website (functionalities and design)
@@ -11,16 +12,16 @@ New year, new goals - so here's what I plan to do in 2025:
  - Finish building/fix my computer science club's website (before I graduate) 
  - Compete in PicoCTF 2025
  - Explore Hack the Box more!
- -[x] Develop the website for the [Market repository](https://github.com/M-watermelon/Market-Site)
+ - ~~Develop the website for the [Market repository](https://github.com/M-watermelon/Market-Site)~~
 
 #### Biology:
  - Finish the NIH course in Clinical Pharmacology and take the final exam
 
 #### Life:
- - Write blog posts and create more content!
+ - ~~Write blog posts and create more content!~~
  - drink more water!!
  - Graduate :D
- - Gaming!
+ - ~~Gaming!~~
 
  ---
 

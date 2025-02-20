@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/post.astro
 title: "First Biology Post"
-date: "Continuously!"
+date: "Recently updated!"
+desc: "Some bio stuff I've been working on lately..."
 ---
 
 ## Currently working on:

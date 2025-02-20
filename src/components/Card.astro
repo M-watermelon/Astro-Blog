@@ -1,25 +1,27 @@
 ---
 interface Props {
 	title: string;
+	date: string;
 	body: string;
 	href: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, date, body } = Astro.props;
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
 			{title}
-			<span>&rarr;</span>
+			<span style="color: var(--purple);">&rarr;</span>
 		</h2>
+		<h4>
+			{date}
+		</h4>
 		<p>
 			{body}
 		</p>
 	</a>
-		<button  type="button" class = "center" onclick={`window.location='${href}'`}> Read More</button>
-
 	
 </li>
 <style>
@@ -42,7 +44,7 @@ const { href, title, body } = Astro.props;
 		line-height: 1.4;
 		padding: calc(2.5rem - 10px);
 		border-radius: 8px;
-		color: inherit;
+		transition: 0.3s;
 	}
 
 
@@ -51,15 +53,17 @@ const { href, title, body } = Astro.props;
 		margin-left: 0px;
 		margin-bottom: 30px;
 	}
+	h4 {
+		text-decoration: none;
+		font-size: 12px;
+		color:var(--purple);
+		margin-left: 0px;
+		margin-bottom: 30px;
+	}
 	p {
 		font-size:20px;
 		font-weight: 100px;
 		margin-bottom: 0;
-	}
-	button{
-		opacity: 0.8;
-		margin: 10px;
-
 	}
 
 </style>

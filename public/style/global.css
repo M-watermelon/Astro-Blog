@@ -213,3 +213,6 @@
   
       
     }
+    li::marker{
+      color:var(--purple);
+    }

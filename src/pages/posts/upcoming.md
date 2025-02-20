@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/post.astro
 title: "Upcoming Changes!"
-date: "..."
+date: "Recently Updated"
+desc: "My todo-list for the website!"
 ---
 
 ## To do (maintenance):
 - [ ] Reorder the post display
-- [ ] Add a markdown prop for post summaries
+- [X] Add a markdown prop for post summaries
 - [ ] Fix the favicon (which works on localhost but not when published)
 - [ ] Add an image carousel of my microscope slides (could be a way to make the site more interactive)
 - [ ] Responsive web-design!! I need to make this site mobile friendly
