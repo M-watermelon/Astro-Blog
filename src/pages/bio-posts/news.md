@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/post.astro
 title: "Some good news"
-date: "02 Feb 2025"
-desc: "Some college and carreer rambling"
+date: "12 Feb 2025"
+desc: "Some college and career rambling"
 ---
 
 ## I am majoring in biochemistry!

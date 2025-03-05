@@ -17,7 +17,7 @@ const { frontmatter, url } = Astro.props;
     <Head title ={frontmatter.title} />
   <body>
     <Nav title={frontmatter.title}/>
-    <main class="center" transition:animate="slide">
+    <main class="center" transition:animate="fade">
     <h1>{frontmatter.title}</h1>
     <p>Updated: {frontmatter.date}</p>
     <slot />
