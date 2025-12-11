@@ -27,10 +27,9 @@ const { href, title, date, body } = Astro.props;
 <style>
 	.link-card {
 		list-style: none;
-		border-radius: 1rem;
 		/*background-color: rgba(255, 255, 255, 0.24);
 		 */
-		box-shadow: inset rgba(0, 0, 0, 0.39) 5px 5px 5px 5px;
+		box-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px 5px;
 		width:auto;
 		margin:40px;
 		margin-left: 20px;
@@ -39,6 +38,7 @@ const { href, title, date, body } = Astro.props;
 	}
 	
 	.link-card > a {
+		color: var(--purple);
 		width: 100%;
 		text-decoration: none;
 		line-height: 1.4;
