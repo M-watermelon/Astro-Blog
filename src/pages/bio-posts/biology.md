@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/post.astro
 title: "First Biology Post"
-date: "Recently updated!"
+date: "20 Aug 2025"
 desc: "Some bio stuff I've been working on lately..."
 ---
 

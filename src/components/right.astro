@@ -5,7 +5,7 @@ interface Props {
 
 const {title } = Astro.props;
 ---
-<section>
+<section class ="sidebar">
     <h3  class="subtitle">{title}<h3>
         <ul>
             <slot />
@@ -17,15 +17,20 @@ const {title } = Astro.props;
     section{
         display: block;
         background-color:var(--bg-color);
-        width:fit-content;
+        width:auto;
         margin: 20px ;
         height:auto;
         border-left:1px solid var(--royal-purple);
         position:absolute;
-        right:4vw;
+        right:3vw;
         text-align: left;
         
         
+    }
+    @media (max-width: 1400px) {
+    .sidebar{
+        display: none;
+    }
     }
     ul{
         list-style-type:none;

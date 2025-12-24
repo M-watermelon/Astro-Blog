@@ -3,7 +3,7 @@ import type { MarkdownLayoutProps } from 'astro';
 import Right from '../components/right.astro';
 import Layout from '../layouts/ind.astro';
 import Card from '../components/Card.astro';
-const posts = await Astro.glob('../pages/posts/*.md');
+const posts = await Astro.glob('../pages/*/*.md');
 type Props = MarkdownLayoutProps<{
   title: string;
   date: string;
@@ -16,7 +16,7 @@ const { frontmatter, url } = Astro.props;
 
 <Layout title="Home - My Blog" bantitle="Astro blog, by m-watermelon" bandesc="My personal website, updated somewhat often. ">
 	<Right title="All Posts">
-		{posts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+		{posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)).map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 	</Right>	
 	<h1 >Posts</h1>		
 	<div class="post-area">
