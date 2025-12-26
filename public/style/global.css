@@ -3,6 +3,7 @@
     --link-color:#e0215a;
     --roseWhite: #ffe8e5;
     --shadow: rgba(3, 3, 3, 0.788);
+    --dark: rgb(3, 3, 3);
     --purple: #d0b6e3;
     --tropical-indigo: #8D7BC8ff;
     --amethyst: #7E6BBBff;
@@ -38,7 +39,8 @@
     line-height: 1.6;
   }
   a {
-    color:var(--link-color);  
+    color:var(--purple);
+
     text-decoration: none;
   }
 

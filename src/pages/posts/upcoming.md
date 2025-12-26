@@ -6,7 +6,7 @@ desc: "My todo-list for the website!"
 ---
 
 ## To do (maintenance):
-- [ ] Reorder the post display
+- [X] Reorder the post display (Done Dec 2025!)![happy-emoticon](../../images/happy.gif)
 - [X] Add a markdown prop for post summaries
 - [X] Fix the favicon (which works on localhost but not when published)
 
@@ -17,7 +17,7 @@ desc: "My todo-list for the website!"
     ```
 
 - [ ] Add an image carousel of my microscope slides (could be a way to make the site more interactive)
-- [ ] Responsive web-design!! I need to make this site mobile friendly
+- [X] Responsive web-design!! I need to make this site mobile friendly (somewhat done Dec 2025)
 
 ## Hopeful goals:
 - [ ] Figure out ways to make the site interactive
