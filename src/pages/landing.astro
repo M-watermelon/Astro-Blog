@@ -1,5 +1,15 @@
 ---
 import Layout from '../layouts/page.astro';
+import Card from '../components/Card.astro';
+const posts = await Astro.glob('../social-posts/*.md');
+type Props = MarkdownLayoutProps<{
+  title: string;
+  date: string;
+  desc: string;
+}>;
+
+const { frontmatter, url } = Astro.props;
+
 ---
 <Layout title="Social - My Blog" bantitle="Social">
 
@@ -7,6 +17,12 @@ import Layout from '../layouts/page.astro';
         <p class="subtitle">A spot for a landing page!</p>
         <p>This is my social landing page. I think I'll post more miscellaneous or creative things here.</p>
     </section>
+        <section class="post-area">
+
+      {posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, date={post.frontmatter.date}, body={post.frontmatter.desc}/>)}
+
+
+</section>
     
 </Layout>
 

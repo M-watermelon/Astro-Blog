@@ -33,8 +33,6 @@ Here are some interesting biology related websites I've compiled! They go from s
 One day, I'll post a photo carousel of my microscope slides, especially since I'm using Astro!
 
 ## My favorite biology book:
- **The Color Atlas of Biochemistry:**
+![Image of the Color Atlas of Biochemistry](../../images/book.jpg)
 
- 
-![Image of the Color Atlas of Biochemistry](/src/images/book.jpg "book")
-
+ **The Color Atlas of Biochemistry!** It's an interesting little reference book, and it certainly helped reinforce my research interests in this field. I think it'll definitely help me once I start my biochemistry courses.
