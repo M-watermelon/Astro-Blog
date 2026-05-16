@@ -7,14 +7,19 @@ interface Props {
 }
 
 const { href, title, date, body } = Astro.props;
+
+import pin from "../images/pin2.png";
+
 ---
 
 <li class="link-card">
+	<img style="padding-left:20px; height:50px; transform: scaleX(-1); " src={pin.src}>
 	<a href={href}>
 		<h2>
 			{title}
-			<span style="color: var(--purple);">&rarr;</span>
+			<span style="color: var(--purple);">&rarr; </span>
 		</h2>
+		
 		<h4>
 			{date}
 		</h4>
@@ -27,14 +32,13 @@ const { href, title, date, body } = Astro.props;
 <style>
 	.link-card {
 		list-style: none;
-		/*background-color: rgba(255, 255, 255, 0.24);
-		 */
-		box-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px 5px;
+		box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px 5px;
 		width:auto;
 		margin:40px;
 		margin-left: 20px;
 		padding-left: 0px;
     	padding: 20px;
+		border-radius: 20px;
 	}
 	
 	.link-card > a {
@@ -48,6 +52,7 @@ const { href, title, date, body } = Astro.props;
 	}
 	.link-card > a:hover {
 		color: var(--tropical-indigo);
+		transform:scale(40px);
 	}
 
 

@@ -33,21 +33,23 @@ const {desc} = Astro.props;
   nav{
     padding: 20px;
     height: fit-content;
-    background-color: rgb(15, 15, 15);
     /*box-shadow: inset 0px 0px 15px 5px var(--shadow);*/
   }
     a{
     margin-left:70px;
-    font-size: 15px;
+    font-size: 20px;
     display: inline;
     margin-top: 10px;
     transition:0.3s;  
-    color:var(--purple);
+    color:transparent;
 
   }
   
     a:hover{
     background-color: transparent;
+    color:var(--purple);
+    padding-right: 30px;
+
 
   }
   hr{

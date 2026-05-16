@@ -15,8 +15,11 @@ const { frontmatter, url } = Astro.props;
 
     <section class="block">
         <p class="subtitle">A spot for a landing page!</p>
+        
         <p>This is my social landing page. I think I'll post more miscellaneous or creative things here.</p>
-    </section>
+   
+      </section>
+    
         <section class="post-area">
 
       {posts.map(post =><Card href={post.url}, title={post.frontmatter.title}, date={post.frontmatter.date}, body={post.frontmatter.desc}/>)}
